@@ -38,6 +38,12 @@ public class AmitaTest {
 
     @BeforeClass
     public static void setUpClass() throws Exception {
+        ChromeOptions options = new ChromeOptions(); 
+  options.addArguments("--headless"); 
+options.addArguments("--disable-gpu"); 
+ options.addArguments("--window-size=1400,800");
+ 
+WebDriver driver = new ChromeDriver(options); 
     }
 
     @AfterClass
