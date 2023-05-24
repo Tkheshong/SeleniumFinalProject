@@ -41,12 +41,7 @@ public class PriceTransparencyNoInsTest {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        ChromeOptions options = new ChromeOptions(); 
-  options.addArguments("--headless"); 
-options.addArguments("--disable-gpu"); 
- options.addArguments("--window-size=1400,800");
- 
-WebDriver driver = new ChromeDriver(options); 
+  
     }
 
     @AfterClass
