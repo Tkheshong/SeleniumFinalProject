@@ -206,8 +206,8 @@ public class PriceTransparencyNoInsTest {
         searchBar.sendKeys(Keys.ENTER);
 
         driver.findElement(By.xpath("//*[@id=\"root\"]/div/section/div[2]/div/div[1]/div[1]/button/div/div/div[2]/p")).click();
-         WebDriverWait wait = new WebDriverWait(driver, 20);  //20 sec
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input']"))).click();
+        // WebDriverWait wait = new WebDriverWait(driver, 20);  //20 sec
+       // wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='MuiSelect-root MuiSelect-select MuiSelect-selectMenu MuiSelect-outlined MuiInputBase-input MuiOutlinedInput-input']"))).click();
 //        driver.findElement(By.id("insurance-provider-select")).click();
         driver.findElement(By.xpath("//*[@id=\"menu-\"]/div[3]/ul/li[2]")).click();
         driver.findElement(By.xpath("//*[@id=\"insurance-plan-select\"]")).click();
